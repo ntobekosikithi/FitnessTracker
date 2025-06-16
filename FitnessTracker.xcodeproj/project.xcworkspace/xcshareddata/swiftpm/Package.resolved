@@ -1,0 +1,42 @@
+{
+  "originHash" : "e79ec653ade57e1cc2088ea1f795394b00e80de2f5483bdd5136018128795434",
+  "pins" : [
+    {
+      "identity" : "goalmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ntobekosikithi/GoalManager.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6cd61657fcff87e4f69e76e04760bedc41ec27bf"
+      }
+    },
+    {
+      "identity" : "utilities",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ntobekosikithi/Utilities.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "49293f24912b9dcb29d4fd721684f24f7066c1a4"
+      }
+    },
+    {
+      "identity" : "weather",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ntobekosikithi/Weather.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "aab4a32fd99d1921d1823bcd57d2880ac8d4fcb7"
+      }
+    },
+    {
+      "identity" : "workouttracker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ntobekosikithi/WorkoutTracker.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "978787d6314b11ca23d136ee67815c9eb11e91b8"
+      }
+    }
+  ],
+  "version" : 3
+}

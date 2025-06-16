@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		51B6547D2DFCA4E4004AF9AC /* WorkoutTracker in Frameworks */ = {isa = PBXBuildFile; productRef = 51B6547C2DFCA4E4004AF9AC /* WorkoutTracker */; };
+		51B654802DFCA516004AF9AC /* GoalManager in Frameworks */ = {isa = PBXBuildFile; productRef = 51B6547F2DFCA516004AF9AC /* GoalManager */; };
+		51B6548F2E00C046004AF9AC /* Weather in Frameworks */ = {isa = PBXBuildFile; productRef = 51B6548E2E00C046004AF9AC /* Weather */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		51B6544D2DFB737C004AF9AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +35,22 @@
 		51B654562DFB737C004AF9AC /* FitnessTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		51B654912E00C643004AF9AC /* Exceptions for "FitnessTracker" folder in "FitnessTracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 51B6543B2DFB737B004AF9AC /* FitnessTracker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		51B6543E2DFB737B004AF9AC /* FitnessTracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				51B654912E00C643004AF9AC /* Exceptions for "FitnessTracker" folder in "FitnessTracker" target */,
+			);
 			path = FitnessTracker;
 			sourceTree = "<group>";
 		};
@@ -52,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B6548F2E00C046004AF9AC /* Weather in Frameworks */,
+				51B6547D2DFCA4E4004AF9AC /* WorkoutTracker in Frameworks */,
+				51B654802DFCA516004AF9AC /* GoalManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +134,9 @@
 			);
 			name = FitnessTracker;
 			packageProductDependencies = (
+				51B6547C2DFCA4E4004AF9AC /* WorkoutTracker */,
+				51B6547F2DFCA516004AF9AC /* GoalManager */,
+				51B6548E2E00C046004AF9AC /* Weather */,
 			);
 			productName = FitnessTracker;
 			productReference = 51B6543C2DFB737B004AF9AC /* FitnessTracker.app */;
@@ -195,6 +220,11 @@
 			);
 			mainGroup = 51B654332DFB737B004AF9AC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				51B6547B2DFCA4E4004AF9AC /* XCRemoteSwiftPackageReference "WorkoutTracker" */,
+				51B6547E2DFCA516004AF9AC /* XCRemoteSwiftPackageReference "GoalManager" */,
+				51B6548D2E00C046004AF9AC /* XCRemoteSwiftPackageReference "Weather" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 51B6543D2DFB737B004AF9AC /* Products */;
 			projectDirPath = "";
@@ -399,11 +429,14 @@
 				DEVELOPMENT_TEAM = C3TSR3HT32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitnessTracker/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location access to show local weather conditions for workout planning.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +461,14 @@
 				DEVELOPMENT_TEAM = C3TSR3HT32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitnessTracker/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location access to show local weather conditions for workout planning.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +594,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51B6547B2DFCA4E4004AF9AC /* XCRemoteSwiftPackageReference "WorkoutTracker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ntobekosikithi/WorkoutTracker.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		51B6547E2DFCA516004AF9AC /* XCRemoteSwiftPackageReference "GoalManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ntobekosikithi/GoalManager.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		51B6548D2E00C046004AF9AC /* XCRemoteSwiftPackageReference "Weather" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ntobekosikithi/Weather.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51B6547C2DFCA4E4004AF9AC /* WorkoutTracker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51B6547B2DFCA4E4004AF9AC /* XCRemoteSwiftPackageReference "WorkoutTracker" */;
+			productName = WorkoutTracker;
+		};
+		51B6547F2DFCA516004AF9AC /* GoalManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51B6547E2DFCA516004AF9AC /* XCRemoteSwiftPackageReference "GoalManager" */;
+			productName = GoalManager;
+		};
+		51B6548E2E00C046004AF9AC /* Weather */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51B6548D2E00C046004AF9AC /* XCRemoteSwiftPackageReference "Weather" */;
+			productName = Weather;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 51B654342DFB737B004AF9AC /* Project object */;
 }

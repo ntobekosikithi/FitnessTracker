@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+@available(iOS 115.0, *)
 @main
 struct FitnessTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
