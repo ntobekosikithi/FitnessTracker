@@ -2,16 +2,6 @@
 
 > A modular iOS fitness tracking application built with Swift Package Manager and feature-based architecture.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Package Structure](#package-structure)
-- [Access Control Strategy](#access-control-strategy)
-- [Architecture Trade-offs](#architecture-trade-offs)
-- [Scaling Strategy](#scaling-strategy)
-- [Development Guidelines](#development-guidelines)
-- [Getting Started](#getting-started)
-
 ## Overview
 
 FitnessTracker is designed as a modular iOS application using Swift Package Manager for dependency management. The architecture follows feature-based package separation with a shared utilities foundation, enabling parallel development and clear separation of concerns.
