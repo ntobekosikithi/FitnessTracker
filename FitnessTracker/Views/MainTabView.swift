@@ -14,7 +14,7 @@ import GoalManager
 struct MainTabView: View {
     @StateObject private var weatherViewModel: WeatherViewModel
     init() {
-        let weatherRepo = WeatherRepositoryImplementation(apiKey: "615c0b5cdb6822c4fcec3e0c800469c7") //Store the APIKey in a safe place
+        let weatherRepo = WeatherRepositoryImplementation(apiKey: "615c0b5cdb6822c4fcec3e0c800469c7") //TODO: Store the APIKey in a safe place
         let weatherViewModel = WeatherViewModel.configured(with: weatherRepo)
         self._weatherViewModel = StateObject(wrappedValue: weatherViewModel)
     }
